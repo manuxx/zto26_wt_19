@@ -3,7 +3,7 @@ using Training.DomainClasses;
 
 public static class EnumerableExtensions
 {
-    public static IEnumerable<TPet> OneAtATime<TPet>(this IEnumerable<TPet> items)
+    public static IEnumerable<TItem> OneAtATime<TItem>(this IEnumerable<TItem> items)
     {
         foreach (var item in items)
         {
